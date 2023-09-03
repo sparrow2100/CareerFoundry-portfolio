@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <title>Claire's Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  </head>
+  <body>
+    <header class="page-header" id="nav-homepage">
+      <img
+        src="img/logo.svg"
+        alt=""
+        width="35px"
+        class="page-header__item header-logo"
+      />
+      <!-- <nav class="page-header__item">
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="menuitem"
+              >About Claire</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="menuitem">Contact</a>
+          </li>
+        </ul> -->
+      <!-- <div class="menubar" role="menubar">
+          <div class="menubar-box">
+            <a href="index.html" role="menuitem" class="menuitem">Home</a>
+          </div>
+        </div> -->
+      <!-- </nav> -->
+      <div class="nav-right">
+        <p class="nav-item" role="presentation">
+          <a href="#" role="menuitem" class="menuitem active">Home</a>
+        </p>
+        <p class="nav-item" role="presentation">
+          <a href="about.html" role="menuitem" class="menuitem">About Claire</a>
+        </p>
+        <p class="nav-item" role="presentation">
+          <a href="work.html" role="menuitem" class="menuitem">Work</a>
+        </p>
+        <p class="nav-item" role="presentation">
+          <a href="contact.html" role="menuitem" class="menuitem">Contact</a>
+        </p>
+      </div>
+    </header>
+    <main class="profile" id="main">
+      <div class="profile-decorations">
+        <div class="profile-decoration__circle"></div>
+        <img
+          alt=""
+          width="300px"
+          src="img/portfolio-square.png"
+          class="placeholder__portrait"
+        />
+      </div>
+      <div class="profile-text">
+        <h1>Hello!</h1>
+        <h2>I'm Claire Sparrow-Clarke</h2>
+        <h3 class="profile-text__item">
+          A <span>Web Development</span> student from Fort Erie, ON.
+        </h3>
+
+        <a href="work.html" class="button">Check out my work</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Find me on:</p>
+        <div class="social-media">
+          <img
+            src="img/211904_social_github_icon.svg"
+            alt="GitHub logo"
+            class="footer-icon"
+          />
+          <img
+            src="img/104501_twitter_bird_icon.svg"
+            alt="Twitter logo"
+            class="footer-icon"
+          />
+          <img
+            src="img/367593_linkedin_business_network_social_icon.svg"
+            alt="LinkedIn Logo"
+            class="footer-icon"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="js/tota11y.js"></script> -->
+    <script>
+      const nav = document.getElementById("nav-homepage");
+      const main = document.getElementById("main");
+      function stickNav(event) {
+        if (window.pageYOffset > 70) {
+          nav.style.position = "fixed";
+          nav.style.zIndex = "5";
+          nav.style.backgroundColor = "white";
+          nav.style.boxShadow = "1px 6px 20px rgba(0, 0, 0, 0.05)";
+          nav.style.width = "100%";
+          nav.style.top = "0px";
+          nav.style.left = "0px";
+          nav.style.transition = "all 300ms ease-in-out";
+
+          main.style.paddingTop = "100px";
+        } else if (window.pageYOffset < 70) {
+          nav.style.position = "static";
+          nav.style.boxShadow = "none";
+          main.style.paddingTop = "0px";
+        }
+      }
+      window.addEventListener("scroll", stickNav);
+    </script>
+  </body>
+</html>
