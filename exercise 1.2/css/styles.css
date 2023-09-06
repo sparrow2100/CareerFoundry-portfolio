@@ -34,7 +34,7 @@ a {
 }
 
 .menuitem:visited {
-  color: var(--secondary-color);
+  color: var(--darker-secondary);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ a {
   color: var(--primary-color);
 }
 .menuitem {
-  color: var(--font-color);
+  color: var(--secondary-color);
   text-decoration: none;
   display: block;
 }
@@ -178,23 +178,6 @@ span {
 .about-title h1 {
   margin-right: 20px;
 }
-
-/* .music-notes {
-  animation-name: rotate-notes;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-duration: 7s;
-} */
-
-/* @keyframes rotate-notes {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .computer-icon {
   animation-name: scale-computer;
