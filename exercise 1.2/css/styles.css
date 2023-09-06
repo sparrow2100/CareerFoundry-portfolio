@@ -112,7 +112,7 @@ h3 {
 
 .placeholder__portrait {
   width: 250px;
-  margin-right: 50px;
+
   border-radius: 49%;
   position: absolute;
   top: 70px;
@@ -469,11 +469,22 @@ label {
 }
 
 @media all and (max-width: 750px) {
+  .header-logo {
+    display: none;
+  }
+
+  .nav-right {
+    width: 100%;
+    padding-right: 0px;
+    justify-content: space-evenly;
+  }
+
   .main-grid {
-    grid-gap: 10px;
+    grid-gap: 50px;
   }
   h1 {
     font-size: 22px;
+    margin-top: 30px;
   }
 
   h2 {
@@ -519,10 +530,29 @@ label {
 
   .bio {
     margin-top: 50px;
+    border: none;
+    border-radius: 0px;
+    height: 650px;
+  }
+  .bio p {
+    margin-bottom: 40px;
   }
 
   .main-grid__item {
     width: 350px;
     margin: 0 auto;
+    height: 320px;
+  }
+
+  .profile-decorations {
+    margin-right: 0px;
+  }
+
+  .profile .profile-decoration__circle {
+    margin-right: 0px;
+  }
+
+  .placeholder__portrait {
+    margin-right: 0px;
   }
 }
