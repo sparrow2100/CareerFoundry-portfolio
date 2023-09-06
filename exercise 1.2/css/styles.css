@@ -208,6 +208,7 @@ span {
 
 .bio {
   max-width: 500px;
+  height: 600px;
   background-color: var(--light-gray);
   border: 2px solid var(--primary-color);
   border-radius: 10px;
@@ -224,6 +225,7 @@ span {
 .bio p {
   font-size: 20px;
   margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .bio h1 {
