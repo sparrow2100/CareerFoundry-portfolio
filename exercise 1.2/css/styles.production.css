@@ -20,6 +20,20 @@ header {
   /*  on scroll the box shadow is box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.05); */
 }
 
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-logo {
   margin-left: 20px;
 }
@@ -28,12 +42,8 @@ menubar-box {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 .menuitem:visited {
-  color: #6967c3;
+  color: #726fc6;
   text-decoration: none;
 }
 
@@ -41,16 +51,13 @@ a {
   color: #bab9ea;
 }
 .menuitem {
-  color: #2b2b2b;
+  color: #6967c3;
   text-decoration: none;
   display: block;
 }
 
-.active {
-  border-bottom: 2px solid #bab9ea;
-}
-
-.active:hover {
+.active:hover,
+.active:focus {
   cursor: default;
 }
 
@@ -60,14 +67,14 @@ a {
   display: flex;
   padding-right: 20px;
 }
+.active {
+  border-bottom: 2px solid #bab9ea;
+  color: #bab9ea;
+}
 
 header p {
-  padding-top: 40px;
-  padding-bottom: 37px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 40px 15px 37px 15px;
+  margin: 0px;
   border-bottom: 3px solid white;
   display: block;
   height: 100%;
@@ -77,6 +84,12 @@ header p {
 }
 
 header p:hover {
+  background-color: #f4f5f6;
+  padding-bottom: 37px;
+  border-bottom: 3px solid #bab9ea;
+}
+
+header p:focus {
   background-color: #f4f5f6;
   padding-bottom: 37px;
   border-bottom: 3px solid #bab9ea;
@@ -92,12 +105,9 @@ header p:hover {
   padding: 15px;
   border-radius: 5px;
   color: white;
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+  -webkit-transition: color 1s ease-in-out;
+  -o-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .button:hover {
@@ -114,19 +124,8 @@ header p:hover {
   border: 2px solid #6967c3;
 }
 
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 22px;
-  margin-bottom: 50px;
-  line-height: 1.5;
-}
-
 .placeholder__portrait {
   width: 250px;
-  margin-right: 50px;
   border-radius: 49%;
   position: absolute;
   top: 70px;
@@ -161,16 +160,8 @@ h3 {
     rgb(114, 111, 198) 100%
   );
   border-radius: 50%;
-  -webkit-animation-name: rotate-circle;
-  animation-name: rotate-circle;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 9s;
-  animation-duration: 9s;
+  -webkit-animation: 9s ease-in-out infinite alternate rotate-circle;
+  animation: 9s ease-in-out infinite alternate rotate-circle;
 }
 
 @-webkit-keyframes rotate-circle {
@@ -211,7 +202,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -227,11 +217,8 @@ span {
   display: -ms-flexbox;
   display: flex;
   max-width: 200px;
-
   -webkit-box-pack: left;
-
   -ms-flex-pack: left;
-
   justify-content: left;
 }
 
@@ -239,74 +226,22 @@ span {
   margin-right: 20px;
 }
 
-/* .music-notes {
-  animation-name: rotate-notes;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-duration: 7s;
-} */
-
-/* @keyframes rotate-notes {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.computer-icon {
-  -webkit-animation-name: scale-computer;
-  animation-name: scale-computer;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 7s;
-  animation-duration: 7s;
-}
-
-@-webkit-keyframes scale-computer {
-  from {
-    -webkit-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
-  }
-  to {
-    -webkit-transform: scale(2, 2);
-    transform: scale(2, 2);
-  }
-}
-
-@keyframes scale-computer {
-  from {
-    -webkit-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
-  }
-  to {
-    -webkit-transform: scale(2, 2);
-    transform: scale(2, 2);
-  }
-}
-
 .main-about {
   text-align: center;
-  max-width: 700px;
   max-width: 90%;
   margin: 0 auto;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin-top: 50px;
 }
 
 .bio {
   max-width: 500px;
+  height: 600px;
   background-color: #f4f5f6;
   border: 2px solid #bab9ea;
   border-radius: 10px;
@@ -328,11 +263,11 @@ span {
 .bio p {
   font-size: 20px;
   margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .bio h1 {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .skill-flex {
@@ -394,15 +329,6 @@ span {
   border-radius: 10%;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
 footer {
   margin-top: 100px;
   background-color: #f4f5f6;
@@ -432,8 +358,6 @@ footer {
 .footer-icon:focus {
   cursor: pointer;
 }
-
-/* Work page */
 
 .main-projects {
   text-align: center;
@@ -3058,11 +2982,24 @@ label {
 }
 
 @media all and (max-width: 750px) {
+  .header-logo {
+    display: none;
+  }
+
+  .nav-right {
+    width: 100%;
+    padding-right: 0px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+
   .main-grid {
-    grid-gap: 10px;
+    grid-gap: 50px;
   }
   h1 {
     font-size: 22px;
+    margin-top: 30px;
   }
 
   h2 {
@@ -3119,10 +3056,29 @@ label {
 
   .bio {
     margin-top: 50px;
+    border: none;
+    border-radius: 0px;
+    height: 650px;
+  }
+  .bio p {
+    margin-bottom: 40px;
   }
 
   .main-grid__item {
     width: 350px;
     margin: 0 auto;
+    height: 320px;
+  }
+
+  .profile-decorations {
+    margin-right: 0px;
+  }
+
+  .profile .profile-decoration__circle {
+    margin-right: 0px;
+  }
+
+  .placeholder__portrait {
+    margin-right: 0px;
   }
 }
