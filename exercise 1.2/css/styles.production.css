@@ -48,11 +48,6 @@ menubar-box {
   height: 100%;
 }
 
-.menuitem:visited {
-  color: #726fc6;
-  text-decoration: none;
-}
-
 .menuitem:active {
   color: #bab9ea;
 }
@@ -584,7 +579,6 @@ label {
   .main-grid {
     -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr;
-
     grid-template-rows: repeat(3 300px);
   }
   .main-grid > *:nth-child(1) {
