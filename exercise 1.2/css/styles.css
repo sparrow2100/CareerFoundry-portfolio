@@ -39,13 +39,12 @@ a {
   margin-left: 20px;
 }
 
-menubar-box {
-  height: 100%;
+.page-header__item {
+  align-self: center;
 }
 
-.menuitem:visited {
-  color: var(--darker-secondary);
-  text-decoration: none;
+menubar-box {
+  height: 100%;
 }
 
 .menuitem:active {
@@ -68,7 +67,7 @@ menubar-box {
 }
 .active {
   border-bottom: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 header p {
@@ -85,6 +84,7 @@ header p:focus {
   background-color: var(--light-gray);
   padding-bottom: 37px;
   border-bottom: 3px solid var(--primary-color);
+  cursor: pointer;
 }
 
 .button {
