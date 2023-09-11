@@ -108,9 +108,12 @@ header p:focus {
   padding: 15px;
   border-radius: 5px;
   color: white;
-  -webkit-transition: color 1s ease-in-out;
-  -o-transition: color 1s ease-in-out;
-  transition: color 1s ease-in-out;
+  -webkit-transition: color 300ms ease-in-out,
+    background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out, background-color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
 }
 
 .button:hover {
@@ -579,6 +582,7 @@ label {
   .main-grid {
     -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr;
+
     grid-template-rows: repeat(3 300px);
   }
   .main-grid > *:nth-child(1) {

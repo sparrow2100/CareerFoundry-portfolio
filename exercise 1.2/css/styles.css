@@ -96,7 +96,8 @@ header p:focus {
   padding: 15px;
   border-radius: 5px;
   color: white;
-  transition: color 1s ease-in-out;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
 }
 
 .button:hover,
