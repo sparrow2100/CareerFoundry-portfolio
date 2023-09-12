@@ -35,16 +35,51 @@ a {
   text-decoration: none;
 }
 
+span {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+footer {
+  margin-top: 100px;
+  background-color: var(--light-gray);
+  padding: 50px;
+  padding-bottom: 20px;
+  height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 100px;
+  background-color: var(--light-gray);
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+input,
+textarea {
+  border: 1px solid var(--secondary-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
 .header-logo {
   margin-left: 20px;
 }
 
 .page-header__item {
   align-self: center;
-}
-
-menubar-box {
-  height: 100%;
 }
 
 .menuitem:active {
@@ -149,10 +184,6 @@ header p:focus {
   display: flex;
 }
 
-span {
-  border-bottom: 2px solid var(--primary-color);
-}
-
 .page-header {
   display: flex;
   width: 100%;
@@ -249,17 +280,6 @@ span {
   border-radius: 10%;
 }
 
-footer {
-  margin-top: 100px;
-  background-color: var(--light-gray);
-  padding: 50px;
-  padding-bottom: 20px;
-  height: 215px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 .footer-content p {
   margin-left: 5px;
 }
@@ -343,33 +363,9 @@ contact-info__item:focus {
   text-decoration: underline;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  padding: 100px;
-  background-color: var(--light-gray);
-  margin: 0 auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  transition: all 250ms ease-in-out;
-}
-
 form:hover,
 form:focus {
   box-shadow: var(--box-shadow);
-}
-
-input,
-textarea {
-  border: 1px solid var(--secondary-color);
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-label {
-  margin-bottom: 5px;
 }
 
 .submit {
@@ -415,6 +411,19 @@ label {
 }
 
 @media all and (max-width: 750px) {
+  h1 {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
   .header-logo {
     display: none;
   }
@@ -427,18 +436,6 @@ label {
 
   .main-grid {
     grid-gap: 50px;
-  }
-  h1 {
-    font-size: 22px;
-    margin-top: 30px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 18px;
   }
 
   .profile {
