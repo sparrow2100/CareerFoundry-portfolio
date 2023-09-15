@@ -11,6 +11,8 @@
   box-sizing: border-box;
 }
 
+/* General */
+
 body {
   color: var(--font-color);
   font-family: Lato, sans-serif;
@@ -62,6 +64,11 @@ form {
   transition: all 250ms ease-in-out;
 }
 
+form:hover,
+form:focus {
+  box-shadow: var(--box-shadow);
+}
+
 input,
 textarea {
   border: 1px solid var(--secondary-color);
@@ -73,6 +80,8 @@ textarea {
 label {
   margin-bottom: 5px;
 }
+
+/* Header section */
 
 .header-logo {
   margin-left: 20px;
@@ -122,6 +131,15 @@ header p:focus {
   cursor: pointer;
 }
 
+.page-header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Buttons */
+
 .button {
   background-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
@@ -142,6 +160,23 @@ header p:focus {
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
 }
+
+/* Footer section */
+
+.footer-content p {
+  margin-left: 5px;
+}
+
+.footer-icon {
+  height: 28px;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  cursor: pointer;
+}
+
+/* Homepage */
 
 .placeholder__portrait {
   width: 250px;
@@ -184,12 +219,7 @@ header p:focus {
   display: flex;
 }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
+/* About Page */
 
 .about-title {
   display: flex;
@@ -280,18 +310,7 @@ header p:focus {
   border-radius: 10%;
 }
 
-.footer-content p {
-  margin-left: 5px;
-}
-
-.footer-icon {
-  height: 28px;
-}
-
-.footer-icon:hover,
-.footer-icon:focus {
-  cursor: pointer;
-}
+/* Portfolio Section (work page) */
 
 .main-projects {
   text-align: center;
@@ -363,11 +382,6 @@ contact-info__item:focus {
   text-decoration: underline;
 }
 
-form:hover,
-form:focus {
-  box-shadow: var(--box-shadow);
-}
-
 .submit {
   background-color: var(--secondary-color);
   margin-top: 20px;
@@ -390,6 +404,8 @@ form:focus {
   cursor: pointer;
 }
 
+/* Media Queries */
+
 @media all and (max-width: 500px) {
   .main-grid {
     grid-template-columns: 1fr;
@@ -403,7 +419,7 @@ form:focus {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 501px) and (max-width: 750px) {
   .main-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 300px);
