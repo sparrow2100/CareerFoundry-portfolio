@@ -52,6 +52,15 @@ footer {
   align-items: flex-end;
 }
 
+ul {
+  text-align: left;
+  align-items: left;
+  margin-left: 20px;
+  padding: 0px;
+
+  line-height: 1.5;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -312,15 +321,16 @@ header p:focus {
 
 /* Portfolio Section (work page) */
 
-.main-projects {
+.portfolio-title {
   text-align: center;
+  padding-top: 25px;
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
-  max-width: 900px;
+  width: 80%;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -347,6 +357,11 @@ main-grid__item:focus {
   margin-bottom: 20px;
 }
 
+.screenshot {
+  width: 90%;
+  margin: 0 auto !important;
+}
+
 .technologies {
   display: flex;
   justify-content: center;
@@ -355,6 +370,10 @@ main-grid__item:focus {
 .technologies-logo {
   margin-right: 5px;
   margin-left: 5px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /*Contact Page*/
@@ -422,7 +441,6 @@ contact-info__item:focus {
 @media all and (min-width: 501px) and (max-width: 750px) {
   .main-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3 300px);
   }
 }
 
@@ -497,10 +515,15 @@ contact-info__item:focus {
     margin-bottom: 40px;
   }
 
+  .main-grid {
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(11, 800px);
+  }
+
   .main-grid__item {
     width: 350px;
     margin: 0 auto;
-    height: 320px;
   }
 
   .profile-decorations {
