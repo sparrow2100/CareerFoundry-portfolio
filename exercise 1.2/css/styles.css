@@ -230,35 +230,30 @@ header p:focus {
 
 /* About Page */
 
-.about-title {
-  display: flex;
-  max-width: 200px;
-  justify-content: left;
-}
-
-.about-title h1 {
-  margin-right: 20px;
-}
-
 .main-about {
   text-align: center;
   max-width: 90%;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
+
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .bio {
-  max-width: 500px;
-  height: 600px;
+  max-width: 50%;
+
   /* background-color: var(--light-gray); */
 
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   line-height: 2;
   padding: 30px;
-  text-align: left;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .bio:hover,
@@ -276,48 +271,26 @@ header p:focus {
   margin: 0px;
 }
 
-.skill-flex {
-  display: flex;
-  flex-wrap: wrap;
-  height: 265px;
-  justify-content: space-evenly;
-  width: 450px;
+.skills {
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
 }
 
-.skill-box {
-  width: 100px;
+.skills-list_item {
+  padding: 7px;
+  border-bottom: 2px solid var(--light-gray);
+  margin: 0px;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.skills-list_item:hover {
   background-color: var(--light-gray);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 120px;
   border-radius: 5px;
-  margin-right: 10px;
-  border: 2px solid var(--light-gray);
-  transition: border-color 200ms ease-in-out;
-}
-
-.skill-box:hover,
-.skill-box:focus {
-  border: 2px solid var(--secondary-color);
-}
-
-.skills__item {
-  background-color: var(--secondary-color);
-  padding: 5px;
-  border-radius: 10%;
-}
-
-.skills-item__css,
-.skills-item__html {
-  padding: 5px 10px 5px 10px;
-  background-color: var(--secondary-color);
-  border-radius: 10%;
-}
-
-.skills-item__book {
-  padding: 9px;
-  background-color: var(--secondary-color);
-  border-radius: 10%;
+  cursor: pointer;
 }
 
 /* Portfolio Section (work page) */
