@@ -19,109 +19,330 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.production.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/047911bba3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
   </head>
   <body>
-    <header class="page-header" id="nav">
-      <a href="index.html" class="page-header__item header-logo">
-        <img
-          src="img/logo.svg"
-          alt="A purple logo that looks like an empty HTML element."
-          width="35"
-        />
-      </a>
-
-      <div class="nav-right">
-        <a href="index.html" role="menuitem" class="menuitem">
-          <p class="nav-item" role="presentation">Home</p></a
-        >
-        <a href="about.html" role="menuitem" class="menuitem active">
-          <p class="nav-item" role="presentation">About Claire</p>
-        </a>
-        <a href="work.html" role="menuitem" class="menuitem">
-          <p class="nav-item" role="presentation">Work</p></a
-        >
-        <a href="contact.html" role="menuitem" class="menuitem">
-          <p class="nav-item" role="presentation">Contact</p></a
-        >
-      </div>
-    </header>
-    <main class="main-about" id="main">
-      <div class="bio">
-        <div class="about-title">
-          <h1>About</h1>
-        </div>
-
-        <p>
-          Hello! I'm Claire, a violinist-turned-web development student. After
-          graduating with a degree in musicology and working as a violin/piano
-          instructor, I decided it was time for a change. Luckily, I discovered
-          coding and have been learning ever since! Web development allows me to
-          apply the creativity and problem-solving skills I have cultivated
-          throughout my music career in a new, exciting way.
-        </p>
-        <a
-          href="img/Resume-Claire-Sparrow-Clarke (11).pdf"
-          target="_blank"
-          class="button"
-          download
-          >Download my CV</a
-        >
-      </div>
-
-      <div class="skills">
-        <h2>My Skills and Experience</h2>
-        <div class="skills-list">
-          <p class="skills-list_item">React</p>
-          <p class="skills-list_item">Angular</p>
-          <p class="skills-list_item">MongoDB</p>
-          <p class="skills-list_item">PostgreSQL</p>
-          <p class="skills-list_item">CORS</p>
-          <p class="skills-list_item">Expo</p>
-          <p class="skills-list_item">Android Studio</p>
-          <p class="skills-list_item">AWS Lambda</p>
-          <p class="skills-list_item">Google Firestore/Firebase</p>
-          <p class="skills-list_item">jQuery</p>
-          <p class="skills-list_item">Research</p>
-          <p class="skills-list_item">Content Writing</p>
-          <p class="skills-list_item">
-            Collaboration (chamber music, orchestras, etc)
-          </p>
-          <p class="skills-list_item">Teaching</p>
-          <p class="skills-list_item last">
-            Violin, Viola, Baroque Violin, Piano
-          </p>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>Find me on:</p>
-        <div class="social-media">
-          <a href="https://github.com/sparrow2100" target="_blank">
+    <div class="outer-div">
+      <div class="page-content">
+        <header class="page-header" id="nav">
+          <a href="index.html" class="page-header__item header-logo">
             <img
-              src="img/211904_social_github_icon.svg"
-              alt="GitHub logo"
-              class="footer-icon"
-          /></a>
-          <a href="https://twitter.com/cmsparrow18" target="_blank">
-            <img
-              src="img/104501_twitter_bird_icon.svg"
-              alt="Twitter logo"
-              class="footer-icon"
-          /></a>
-          <a href="https://www.linkedin.com/in/claire-sparrow/" target="_blank">
-            <img
-              src="img/367593_linkedin_business_network_social_icon.svg"
-              alt="LinkedIn Logo"
-              class="footer-icon"
-          /></a>
-        </div>
+              src="img/logo.svg"
+              alt="A purple logo that looks like an empty HTML element."
+              width="35"
+            />
+          </a>
+
+          <div class="nav-right">
+            <a href="index.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Home</p></a
+            >
+            <a href="about.html" role="menuitem" class="menuitem active">
+              <p class="nav-item" role="presentation">About Claire</p>
+            </a>
+            <a href="work.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Work</p></a
+            >
+            <a href="contact.html" role="menuitem" class="menuitem">
+              <p class="nav-item nav-item_last" role="presentation">
+                Contact
+              </p></a
+            >
+          </div>
+        </header>
+        <main class="main-about" id="main">
+          <div class="bio">
+            <div class="about-title">
+              <h1>About</h1>
+            </div>
+
+            <p>
+              Hello! I'm Claire, a violinist-turned-web development student.
+              After graduating with a degree in musicology and working as a
+              violin/piano instructor, I decided it was time for a change.
+              Luckily, I discovered coding and have been learning ever since!
+              Web development allows me to apply the creativity and
+              problem-solving skills I have cultivated throughout my music
+              career in a new, exciting way.
+            </p>
+            <a
+              href="img/Resume-Claire-Sparrow-Clarke (13).pdf"
+              target="_blank"
+              class="button"
+              download
+              >Download my CV</a
+            >
+          </div>
+
+          <div class="skills">
+            <h2>My Skills and Experience</h2>
+            <div class="skills-list">
+              <details class="skills-list_item">
+                <summary>React</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      First introduction to React with the SheCodes weather app
+                    </li>
+                    <li>
+                      Women composers app with React and Women Composers API
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Angular</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      Introduction to Angular with the women composers Angular
+                      app
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>MongoDB</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>Used for the database for a Women Composers API</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>PostgreSQL</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      Used PostgreSQL for a practice database for a Women
+                      Composers API
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>CORS</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>Used in a Women Composers API project</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Expo</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      The Expo app, Expo ImagePicker and Expo Location used in a
+                      React Native Chat app
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Android Studio</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>Android Studio used to test a React Native Chat app</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>AWS Lambda</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      Events app used AWS lambda serverless functions in
+                      conjunction with the Google Calendar API and Google OAuth
+                      authorization
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Google FireStore/Firebase</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      React Native chat app using Google FireStore/Firebase to
+                      store messages and images
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>jQuery</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>To-do list using jQuery</li>
+                    <li>Pokedex (pokemon index) using jQuery</li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Research</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      ongoing research into women composers to create the Women
+                      Composers API
+                    </li>
+                    <li>
+                      research and writing to create the virtual exhibit "The
+                      Rise and Fall of Blue Collar Welland" for the Welland
+                      Historical Museum
+                    </li>
+                    <li>
+                      researched various topics related to automated testing to
+                      help write page content and blogs for Miyar
+                    </li>
+                    <li>
+                      wrote various musicology and anthropology/archaeology
+                      research papers during my BMUS, mentored by a musicology
+                      professor
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Content Writing</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Projects:</p>
+                  <ul>
+                    <li>
+                      Welland Historical Museum virtual exhibit "The Rise and
+                      Fall of Blue Collar Welland"
+                    </li>
+                    <li>
+                      Content for the Miyar blog and webpage during my web
+                      development internship
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Collaboration in ensemble work</summary>
+                <div class="skills-list__content">
+                  <p class="projects-title">Ensembles:</p>
+                  <ul>
+                    <li>Regina Chamber Strings</li>
+                    <li>UVic Baroque Collegium</li>
+                    <li>UVic Orchestra</li>
+                    <li>Lethbridge Symphony Orchestra</li>
+                    <li>UVic Chorus</li>
+                    <li>Brampton Rose Orchestra</li>
+                    <li>quartets</li>
+                    <li>four violin quartet</li>
+                    <li>trio</li>
+                    <li>duets</li>
+                    <li>viola quintets</li>
+                    <li>
+                      Sinfonia Allegro Lethbridge (including as concertmaster)
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item">
+                <summary>Teaching</summary>
+                <div class="skills-list__content">
+                  <ul>
+                    <li>
+                      Taught beginner piano and violin to students ranging in
+                      age from 3 to adult, privately and in a music school
+                    </li>
+                  </ul>
+                </div>
+              </details>
+              <details class="skills-list_item last">
+                <summary>Violin, Viola, Baroque Violin, Piano</summary>
+                <div class="skills-list__content">
+                  <ul>
+                    <li>studying violin since the age of three</li>
+                    <li>self-taught on viola and piano</li>
+                    <li>
+                      learned baroque violin in the UVic Baroque Collegium and
+                      the Tafelmusik Baroque Summer Institute
+                    </li>
+                    <li>
+                      played with the Lethbridge Symphony Orchestra during
+                      highschool
+                    </li>
+                    <li>
+                      earned a Bachelor's of Music in Musicology and Sound
+                      Studies (minor in anthropology) from the University of
+                      Victoria
+                    </li>
+                  </ul>
+                  <p class="projects-title">Instructors & Masterclasses:</p>
+                  <ul>
+                    <li>Megan Green Walburger</li>
+                    <li>Deanna Belanger</li>
+                    <li>Lise Boutin</li>
+                    <li>Sharon Stanis</li>
+                    <li>Airdrie Ignas (occassional lesson)</li>
+                    <li>Peter Visentin (occassional lesson)</li>
+                    <li>Lafayette Quartet (ensemble coaching & juries)</li>
+                    <li>Chloe Meyers (UVic Collegium ensemble coaching)</li>
+                    <li>
+                      Patricia Ahern (Tafelmusik Summer Institute instructor)
+                    </li>
+                    <li>Masterclass with Rivka Golani</li>
+                    <li>Masterclass with Axel Strauss</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-media">
+              <a href="https://github.com/sparrow2100" target="_blank">
+                <img
+                  src="img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon"
+              /></a>
+              <a href="https://twitter.com/cmsparrow18" target="_blank">
+                <img
+                  src="img/104501_twitter_bird_icon.svg"
+                  alt="Twitter logo"
+                  class="footer-icon"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/claire-sparrow/"
+                target="_blank"
+              >
+                <img
+                  src="img/367593_linkedin_business_network_social_icon.svg"
+                  alt="LinkedIn Logo"
+                  class="footer-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+        <!-- <script src="js/tota11y.js"></script> -->
       </div>
-    </footer>
-    <!-- <script src="js/tota11y.js"></script> -->
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
