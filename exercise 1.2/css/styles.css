@@ -432,6 +432,14 @@ contact-info__item:focus {
     font-size: 18px;
   }
 
+  .page-content {
+    gap: 0px;
+  }
+
+  .outer-div {
+    padding: 5px 0px 5px 0px;
+  }
+
   .header-logo {
     display: none;
   }

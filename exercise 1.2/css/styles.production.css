@@ -79,7 +79,7 @@ summary::marker {
 
 .outer-div {
   background-color: #bab9ea;
-  height: 100%;
+  min-height: 100vh !important;
   padding: 25px 0px 25px 0px;
 }
 
@@ -89,12 +89,23 @@ summary::marker {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 93%;
-  height: 90%;
+  min-height: 90vh;
   border-radius: 15px;
   -webkit-box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.25);
   box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 3px 25px rgba(113, 29, 217, 0.4);
   box-shadow: 1px 3px 25px rgba(113, 29, 217, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 /* Header section */
@@ -288,7 +299,7 @@ header p:focus {
 
 .profile {
   max-width: 700px;
-  margin: 100px auto;
+  margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,14 +481,13 @@ header p:focus {
 
 .contact-title {
   text-align: center;
-  margin-top: 50px;
 }
 
 .contact-info {
   width: 40%;
   height: 40%;
   margin: 0 auto;
-  margin-bottom: 170px;
+
   margin-top: 50px;
   padding: 50px;
   border: 2px solid #bab9ea;
@@ -571,6 +581,14 @@ contact-info__item:focus {
 
   h3 {
     font-size: 18px;
+  }
+
+  .page-content {
+    gap: 0px;
+  }
+
+  .outer-div {
+    padding: 5px 0px 5px 0px;
   }
 
   .header-logo {
