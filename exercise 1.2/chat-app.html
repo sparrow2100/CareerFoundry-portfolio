@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/logo.svg"
+    />
+    <title>Claire's Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/css/styles.css"
+    /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="page-content">
+        <header class="page-header project-nav" id="nav">
+          <a href="index.html" class="page-header__item header-logo">
+            <img
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/logo.svg"
+              alt="A purple logo that looks like an empty HTML element."
+              width="35"
+            />
+          </a>
+
+          <div class="nav-right">
+            <a href="index.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Home</p></a
+            >
+            <a href="about.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">About Claire</p></a
+            >
+            <a href="work.html" role="menuitem" class="menuitem active">
+              <p class="nav-item" role="presentation">Work</p></a
+            >
+            <a href="contact.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Contact</p></a
+            >
+          </div>
+        </header>
+        <main id="main">
+          <a href="./work.html" class="back-link">back</a>
+          <h1 class="composers-title">Chat App</h1>
+          <div class="overview spacing-adjust_container">
+            <div class="overview-text">
+              <h2>Overview</h2>
+              <p class="spaced">
+                This is a messaging app built using React Native. The
+                theme-customizable app provides users with a chat interface
+                where they can exchange messages, share images, send their
+                location, and access existing messages offline. It works on both
+                iOS and Android devices and uses Google Firestore/Firebase to
+                store messages and images. Guest authentication is handled with
+                Google Firebase authentication.
+              </p>
+              <div class="github-links_container">
+                <a
+                  href="https://github.com/sparrow2100/chat-app"
+                  target="_blank"
+                  class="button github-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+
+            <img
+              class="chat-screenshot image-right"
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/chat-app.jpeg"
+              alt="The homepage of the chat app, showing an input for your name, colours to choose from, and a button that says start chatting."
+            />
+          </div>
+          <div class="technologies-container">
+            <h3>Technologies:</h3>
+            <ul>
+              <li>React Native</li>
+              <li>Google Firestore/Firebase</li>
+              <li>Expo</li>
+              <li>Expo ImagePicker</li>
+              <li>Expo Location</li>
+              <li>Gifted Chat Library</li>
+              <li>Android Studio</li>
+            </ul>
+          </div>
+          <div class="objective-container">
+            <h3>Objective</h3>
+            <div class="flex-display">
+              <div>
+                <p class="spaced">
+                  Complete a CareerFoundry full-stack development assignment by
+                  creating a React Native messaging app. It should still have
+                  limited functionality offline, and work on both iOS and
+                  Android devices.
+                </p>
+                <ul>
+                  <li>
+                    A page where users can enter their name and choose a
+                    background colour for the chat screen before entering the
+                    chat.
+                  </li>
+                  <li>
+                    A page displaying the conversation, as well as an input
+                    field and submit button.
+                  </li>
+                  <li>
+                    The chat must provide users with two additional
+                    communication features: sending images and location data.
+                  </li>
+                  <li>The data should be stored online and offline.</li>
+                  <li>
+                    The app must be styled according to the given screen design.
+                  </li>
+                  <li>It must be developed using Expo.</li>
+                  <li>
+                    Chat conversations must be stored in Google Firestore
+                    Database.
+                  </li>
+                  <li>
+                    The app must authenticate users anonymously via Google
+                    Firebase authentication.
+                  </li>
+                  <li>Chat conversations must be stored locally.</li>
+                  <li>
+                    The app must let users pick and send images from the phone's
+                    image library.
+                  </li>
+                  <li>
+                    It must let users take pictures with the device's camera app
+                    and send them.
+                  </li>
+                  <li>Images must be stored in Firebase Cloud Storage.</li>
+                  <li>It must be able to read the user's location data.</li>
+                  <li>Location data must be sent in the chat in a map.</li>
+                  <li>
+                    The chat interface and functionality must be created using
+                    the Gifted Chat Library.
+                  </li>
+                  <li>The app's codebase must contain comments.</li>
+                </ul>
+              </div>
+              <img
+                src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/chat-app-objective.jpg"
+                class="case-study_screenshot"
+              />
+            </div>
+          </div>
+
+          <div class="process-container">
+            <div class="subheading-flex">
+              <h3 class="subheading-flex_item">Process</h3>
+              <a href="https://github.com/sparrow2100/chat-app" target="_blank">
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon projects-icon"
+              /></a>
+            </div>
+            <p class="spaced">
+              I found this project very interesting, and loved building
+              something close to the apps I use in my daily life. I encountered
+              a couple challenges while developing this app, particularly around
+              the location and date. I tested the app on the Andriod Studio
+              Android Emulator, but the location showed up as Palo Alto. After a
+              while I realized that it was happening because the location of the
+              Android Emulator was set to Palo Alto, which meant the location
+              feature was actually working. The fact that the location feature
+              showed my location on my iPhone confirmed that it was working.
+            </p>
+            <img
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/chat-app-documentation.png"
+              class="case-study_screenshot_large"
+              alt="A screenshot of the GitHub documentation for the chat app project."
+            />
+          </div>
+          <div class="result-container">
+            <h3>Result</h3>
+            <div class="flex-display">
+              <div class="text-left">
+                <p class="spaced">
+                  The resulting app meets the requirements of the assignment and
+                  looks like the design provided. It also has well-commented
+                  code and thorough documentation.This was one of my favourite
+                  projects in the course. While it meets all the requirements,
+                  to challenge myself further I would like to add on a bonus
+                  feature that was suggested in the assignment: an audio feature
+                  using Expo's Audio API.
+                </p>
+                <ul>
+                  <li>Record and play sounds</li>
+                  <li>Upload the audio file</li>
+                  <li>Send the audio file</li>
+                </ul>
+              </div>
+              <img
+                src="img/chat-app-messages.png"
+                class="chat-screenshot image-right"
+              />
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-media">
+              <a href="https://github.com/sparrow2100" target="_blank">
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon"
+              /></a>
+              <a href="https://twitter.com/cmsparrow18" target="_blank">
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/104501_twitter_bird_icon.svg"
+                  alt="Twitter logo"
+                  class="footer-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/claire-sparrow/"
+                target="_blank"
+              >
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/367593_linkedin_business_network_social_icon.svg"
+                  alt="LinkedIn Logo"
+                  class="footer-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+        <!-- <script src="js/tota11y.js"></script> -->
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -24,6 +24,11 @@ header {
   /*  on scroll the box shadow is box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.05); */
 }
 
+h1 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 h2 {
   font-size: 28px;
 }
@@ -182,6 +187,7 @@ header p:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  /* transition:  */
 }
 
 /* Buttons */
@@ -405,6 +411,10 @@ header p:focus {
 
 /* Portfolio Section (work page) */
 
+.project-name {
+  color: black;
+}
+
 .portfolio-title {
   text-align: center;
   padding-top: 25px;
@@ -422,7 +432,6 @@ header p:focus {
 }
 
 .main-grid__item {
-  background-color: #f4f5f6;
   padding: 25px;
   border: 2px solid #bab9ea;
   border-radius: 10px;
@@ -434,11 +443,13 @@ header p:focus {
 .main-grid__item:hover {
   -webkit-box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
   box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+  cursor: pointer;
 }
 
 .main-grid__item:focus {
   -webkit-box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
   box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+  cursor: pointer;
 }
 
 .button-wrapper {
@@ -460,6 +471,8 @@ header p:focus {
   margin: 0 auto;
 }
 
+/* Case Studies (projects) */
+
 .technologies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,12 +482,219 @@ header p:focus {
   justify-content: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .technologies-logo {
   margin: 0px 5px;
 }
 
-.bold {
+.screenshot-portrait {
+  width: 160px;
+}
+
+.text-left {
+  width: 70%;
+}
+
+.image-right {
+  margin-left: 75px;
+}
+
+.spacing-adjust_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left !important;
+  -ms-flex-pack: left !important;
+  justify-content: left !important;
+}
+
+.back-link {
   font-weight: bold;
+  padding-left: 75px;
+  color: #6967c3;
+}
+
+.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #bab9ea;
+  border-top: 2px solid #bab9ea;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.case-study-screenshot_medium {
+  width: 700px;
+}
+
+.overview-text {
+  width: 600px;
+}
+
+.technologies-container_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.composers-title {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.angular-screenshot {
+  width: 400px;
+  padding-bottom: 50px;
+}
+
+.technologies-container_react {
+  padding-right: 75px;
+}
+
+.technologies-container_angular {
+  padding-right: 75px;
+}
+
+.github-links_container {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.github-link {
+  margin-right: 10px;
+}
+
+.objective-container {
+  border-bottom: 2px solid #bab9ea;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.technologies-container {
+  border-bottom: 2px solid #bab9ea;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.process-container {
+  border-bottom: 2px solid #bab9ea;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.process-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.subheading-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.subheading-flex_item {
+  margin: 0px;
+}
+
+.result-container {
+  border-bottom: 2px solid #bab9ea;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.review-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.subtitle {
+  color: #6967c3;
+  font-weight: bold;
+}
+
+.case-study_screenshot {
+  width: 550px;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.case-study_screenshot_large {
+  width: 750px;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+.spaced {
+  line-height: 2;
+}
+
+.react-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.projects-icon {
+  padding-left: 10px;
+}
+
+.flex-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat-screenshot {
+  height: 400px;
+}
+
+.pokemon-image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.pokemon-image {
+  width: 575px;
 }
 
 /*Contact Page*/
@@ -668,9 +888,8 @@ contact-info__item:focus {
   .main-grid {
     width: 100%;
     height: 100%;
-    -ms-grid-rows: 800px 50px 800px 50px 800px 50px 800px 50px 800px 50px 800px
-      50px 800px 50px 800px 50px 800px 50px 800px 50px 800px;
-    grid-template-rows: repeat(11, 800px);
+    -ms-grid-rows: 300px 50px 300px 50px 300px 50px 300px;
+    grid-template-rows: repeat(4, 300px);
   }
 
   .main-grid__item {
@@ -689,5 +908,57 @@ contact-info__item:focus {
 
   .placeholder__portrait {
     margin-right: 0px;
+  }
+
+  /* Work & portfolio */
+
+  .back-link {
+    padding-left: 15px;
+  }
+
+  .project-nav {
+    margin-bottom: 25px;
+  }
+
+  .overview {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .angular-screenshot {
+    width: 90%;
+  }
+
+  .technologies-container_flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .case-study_screenshot {
+    width: 90%;
+  }
+
+  .data-example {
+    width: 90%;
+  }
+
+  .image-right {
+    margin: 0 auto;
+  }
+  .flex-display {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .case-study_screenshot_large {
+    width: 90%;
+  }
+
+  .text-left {
+    width: 100%;
+  }
+
+  .pokemon-image {
+    width: 90%;
   }
 }

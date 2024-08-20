@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/logo.svg"
+    />
+    <title>Claire's Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/css/styles.css"
+    /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="page-content">
+        <header class="page-header project-nav" id="nav">
+          <a href="index.html" class="page-header__item header-logo">
+            <img
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/logo.svg"
+              alt="A purple logo that looks like an empty HTML element."
+              width="35"
+            />
+          </a>
+
+          <div class="nav-right">
+            <a href="index.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Home</p></a
+            >
+            <a href="about.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">About Claire</p></a
+            >
+            <a href="work.html" role="menuitem" class="menuitem active">
+              <p class="nav-item" role="presentation">Work</p></a
+            >
+            <a href="contact.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Contact</p></a
+            >
+          </div>
+        </header>
+        <main id="main">
+          <a href="./work.html" class="back-link">back</a>
+          <h1 class="composers-title">Weather App</h1>
+          <div class="overview">
+            <div class="overview-text">
+              <h2>Overview</h2>
+              <p class="spaced">
+                This is a weather app that I made for a SheCodes assignment, and
+                my first experience with React. The user can search for any city
+                to display the local weather and time.
+              </p>
+              <div class="github-links_container">
+                <a
+                  href="https://zingy-souffle-849b09.netlify.app/"
+                  target="_blank"
+                  class="button github-link"
+                  >View</a
+                >
+              </div>
+              <h3>Technologies:</h3>
+              <ul>
+                <li>React</li>
+                <li>Open Weather API</li>
+                <li>Hosted on Netlify</li>
+              </ul>
+            </div>
+
+            <img
+              class="case-study_screenshot"
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/better-weather-app.png"
+            />
+          </div>
+
+          <div class="result-container">
+            <div class="subheading-flex">
+              <h3 class="subheading-flex_item">Result</h3>
+              <a
+                href="https://github.com/sparrow2100/weather-app-react"
+                target="_blank"
+              >
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon projects-icon"
+              /></a>
+            </div>
+            <p class="spaced">
+              I had a lot of fun with this project, and was proud of the design
+              in particular. However, when I revisit this project to improve it,
+              I would like to change a couple things. Firstly, the city name
+              appears as the header as it is typed into the search bar. I would
+              like to change this, so the new city name only appears after the
+              submit button is clicked. Secondly, I would like to change the
+              text in the search bar to "find a city", and the submit button to
+              "search" to make it more intuitive.
+            </p>
+            <img
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/weather-app-three.png"
+              alt="Weather app screenshot showing the weather in London."
+              class="case-study_screenshot"
+            />
+            <img
+              src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/weather-app-one.png"
+              alt="Weather app screenshot showing the weather in Seville."
+              class="case-study_screenshot"
+            />
+          </div>
+        </main>
+        <footer>
+          <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-media">
+              <a href="https://github.com/sparrow2100" target="_blank">
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon"
+              /></a>
+              <a href="https://twitter.com/cmsparrow18" target="_blank">
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/104501_twitter_bird_icon.svg"
+                  alt="Twitter logo"
+                  class="footer-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/claire-sparrow/"
+                target="_blank"
+              >
+                <img
+                  src="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/img/367593_linkedin_business_network_social_icon.svg"
+                  alt="LinkedIn Logo"
+                  class="footer-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+        <!-- <script src="js/tota11y.js"></script> -->
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
