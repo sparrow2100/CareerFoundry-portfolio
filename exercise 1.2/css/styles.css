@@ -197,6 +197,10 @@ header p:focus {
 
 /* Homepage */
 
+.homepage-footer{
+  margin-top: 0px;
+}
+
 .placeholder__portrait {
   width: 250px;
   border-radius: 49%;
