@@ -292,8 +292,9 @@ header p:focus {
   margin: 0px;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
 }
 
 .skills-list__content {
