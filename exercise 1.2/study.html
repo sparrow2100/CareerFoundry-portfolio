@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <title>Claire's Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Users/clairesparrow/Desktop/CareerFoundry/exercise 1.2/css/styles.css"
+    /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="page-content">
+        <header class="page-header" id="nav">
+          <a href="index.html" class="page-header__item header-logo">
+            <img
+              src="img/logo.svg"
+              alt="A purple logo that looks like an empty HTML element."
+              width="35"
+            />
+          </a>
+
+          <div class="nav-right">
+            <a href="index.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Home</p></a
+            >
+            <a href="about.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">About Claire</p></a
+            >
+            <a href="work.html" role="menuitem" class="menuitem active">
+              <p class="nav-item" role="presentation">Work</p></a
+            >
+            <a href="contact.html" role="menuitem" class="menuitem">
+              <p class="nav-item" role="presentation">Contact</p></a
+            >
+          </div>
+        </header>
+        <main id="main">
+          <a href="./work.html" class="back-link">back</a>
+          <h1 class="composers-title">Study Spot</h1>
+          <div class="overview">
+            <div class="overview-text">
+              <h2>Overview</h2>
+              <p class="spaced">
+                This is an app that allows students or remote workers to find
+                study spots to complete their work. The user can search for
+                their city, and filter study spots based on type and/or amenity.
+                The details page displays information such as hours, type,
+                address, and reviews.
+              </p>
+              <div class="github-links_container">
+                <a
+                  href="https://mystudyspot.netlify.app/"
+                  target="_blank"
+                  class="button github-link"
+                  >View</a
+                >
+              </div>
+            </div>
+
+            <img
+              class="case-study_screenshot"
+              src="img/studyspot-home.png"
+              alt="A screeshot of the StudySpot app."
+            />
+          </div>
+          <div class="technologies-container">
+            <h3>Technologies:</h3>
+            <ul>
+              <li>Next.js</li>
+              <li>Google Maps API</li>
+              <li>Google Places API</li>
+            </ul>
+          </div>
+          <div class="objective-container">
+            <h3>Objective</h3>
+            <p class="spaced">
+              Continue my professional development by learning how to use
+              Next.js, and create a solution to a problem I've had (finding good
+              study/work spots in a new city).
+            </p>
+          </div>
+          <div class="process-container">
+            <div class="subheading-flex">
+              <h3 class="subheading-flex_item">Process</h3>
+              <a
+                href="https://github.com/sparrow2100/simple-js-app"
+                target="_blank"
+              >
+                <img
+                  src="img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon projects-icon"
+              /></a>
+            </div>
+            <p class="spaced">
+              This is my latest project, and one that I created outside of
+              school from idea to design to implementation. While it was tricky
+              at first learning Next.js, a lot of the challenges came from the
+              idea and the design. I spent a lot of time brainstorming the
+              different things people might look for in a study spot, sketching
+              wireframes, and making the design on Figma. To ensure it would be
+              useful for students, I sent the idea and design to people I had
+              gone to university with to get some valuable feedback. In the end
+              I based the design on several other sites that use maps to display
+              locations, taking a little inspiration from each, and adding my
+              own twist with the smaller details such as colour scheme.
+            </p>
+            <div class="pokemon-image_container">
+              <img
+                src="img/studyspot-loading.png"
+                class="pokemon-image"
+                alt="A screenshot of the app with a view of the homepage while loading."
+              />
+              <img
+                src="img/studyspot-details.png"
+                class="pokemon-image"
+                alt="A screenshot of the app's details page."
+              />
+              <img
+                src="img/studyspot-filters.png"
+                class="pokemon-image"
+                alt="A screenshot of the app's details page."
+              />
+              <img
+                src="img/studyspot-search.png"
+                class="pokemon-image"
+                alt="A screenshot of the app's details page."
+              />
+            </div>
+          </div>
+
+          <div class="result-container">
+            <h3>Result</h3>
+            <p>
+              Overall, I am happy with this basic version of the app. I have
+              plans to add new features in the future, including:
+            </p>
+            <ul>
+              <li>User profiles</li>
+              <li>Authentication</li>
+              <li>User favourites & reviews</li>
+              <li>Study groups</li>
+            </ul>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-media">
+              <a href="https://github.com/sparrow2100" target="_blank">
+                <img
+                  src="img/211904_social_github_icon.svg"
+                  alt="GitHub logo"
+                  class="footer-icon"
+              /></a>
+              <a href="https://twitter.com/cmsparrow18" target="_blank">
+                <img
+                  src="img/104501_twitter_bird_icon.svg"
+                  alt="Twitter logo"
+                  class="footer-icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/claire-sparrow/"
+                target="_blank"
+              >
+                <img
+                  src="img/367593_linkedin_business_network_social_icon.svg"
+                  alt="LinkedIn Logo"
+                  class="footer-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+        <!-- <script src="js/tota11y.js"></script> -->
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
